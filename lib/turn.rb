@@ -20,10 +20,9 @@ def input_to_index(input)
   end
 end
 
-def turn(board, index, player)
-
+def turn(board, input, player)
   if valid_move?(board, input_to_index(input))
-    move (board, index, player)
+    move (board, input, player)
     display_board(board)
   else
     puts "Please try again with 1-9:"
