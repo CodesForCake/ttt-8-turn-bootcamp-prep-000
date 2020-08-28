@@ -20,7 +20,7 @@ def input_to_index(input)
   end
 end
 
-def turn(board, input, player)
+def turn(board, input, player="X")
   if valid_move?(board, input_to_index(input))
     move (board, input, player)
     display_board(board)
