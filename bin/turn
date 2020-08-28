@@ -1,18 +1,8 @@
 #!/usr/bin/env ruby
 
 board=["   ","   ","   ","   ","   ","   ","   ","   ","   "]
-index=gets.trim
-turn(board, index, player)
-display_board(board)
-puts "Welcome! Give your input:"
 
-input=gets.strip
-if valid_move?(board, input_to_index(input))
-  make_move
-  display_board
-else
-  puts "Bad move"
-  input=gets.strip
-  move_is_valid?(input.to_i-1)
-end
-  
+puts "Please enter 1-9:"
+input = gets.strip
+
+turn(board, index, player="X")
