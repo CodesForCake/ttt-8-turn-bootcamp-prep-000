@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-board=[" "," "," "," "," "," "," "," "," "]
+board=["   ","   ","   ","   ","   ","   ","   ","   ","   "]
 display_board(board)
 puts "Welcome! Give your input:"
 
