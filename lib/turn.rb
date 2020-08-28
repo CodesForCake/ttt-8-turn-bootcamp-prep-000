@@ -27,6 +27,7 @@ def turn(board, input, player)
   else
     puts "Please try again with 1-9:"
     input = gets.strip
+    turn(board, input, player)
   end
 end
 
