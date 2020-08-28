@@ -1,1 +1,14 @@
 #!/usr/bin/env ruby
+
+puts "Welcome! Give your input:"
+display_board(board)
+input=gets.strip
+if valid_move?(board, input_to_index(input))
+  make_move
+  display_board
+else
+  puts "Bad move"
+  input=gets.strip
+  move_is_valid?(input.to_i-1)
+end
+  
