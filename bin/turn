@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
 board=["   ","   ","   ","   ","   ","   ","   ","   ","   "]
+index=gets.trim
+turn(board, index, player)
 display_board(board)
 puts "Welcome! Give your input:"
 
