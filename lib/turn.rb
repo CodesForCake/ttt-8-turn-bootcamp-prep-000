@@ -20,9 +20,16 @@ def input_to_index(input)
   end
 end
 
-def turn(board)
+def turn(board, index, player)
   puts "Please enter 1-9:"
-  turn = gets.strip
+  input = gets.strip
+  if valid_move?(board, input_to_index(input))
+    move (board, index, player)
+    display_board(board)
+  else
+    puts "Please try again with 1-9:"
+    input = gets.strip
+  end
 end
 
 def position_taken?(board,index)
