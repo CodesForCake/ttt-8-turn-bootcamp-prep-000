@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 
-puts "Welcome! Give your input:"
+
 display_board(board)
+puts "Welcome! Give your input:"
+
 input=gets.strip
 if valid_move?(board, input_to_index(input))
   make_move
