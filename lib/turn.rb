@@ -29,6 +29,10 @@ def turn(board)
   end
 end
 
+def move(board, index, player="X")
+  board[index] = " #{player} "
+end
+
 def position_taken?(board,index)
   if board[index]==" "||board[index]==""||board[index]==nil
     return FALSE
@@ -37,6 +41,3 @@ def position_taken?(board,index)
   end
 end
 
-def move(board, index, player="X")
-  board[index] = " #{player} "
-end
