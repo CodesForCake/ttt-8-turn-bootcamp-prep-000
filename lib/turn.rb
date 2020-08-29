@@ -18,17 +18,6 @@ def input_to_index(input)
   input.to_i-1
 end
 
-def turn(board)
-  input=input_to_index(gets.strip)
-  if valid_move?(board, input)
-    move (board, input)
-    display_board(board)
-  else
-    puts "Please try again with 1-9:"
-    turn(board)
-  end
-end
-
 def move(board, index, player="X")
   board[index] = " #{player} "
 end
@@ -41,3 +30,13 @@ def position_taken?(board,index)
   end
 end
 
+def turn(board)
+  input=input_to_index(gets.strip)
+  if valid_move?(board, input)
+    move (board, input)
+    display_board(board)
+  else
+    puts "Please try again with 1-9:"
+    turn(board)
+  end
+end
