@@ -21,7 +21,7 @@ end
 def turn(board player="X")
   input=input_to_index(gets.strip)
   if valid_move?(board, input)
-    move (board, input, player="X")
+    move (board, input)
     display_board(board)
   else
     puts "Please try again with 1-9:"
