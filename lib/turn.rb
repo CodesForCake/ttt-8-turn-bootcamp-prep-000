@@ -15,9 +15,7 @@ def valid_move?(board, index)
 end
 
 def input_to_index(input)
-  1.times do
-    input.to_i-1
-  end
+  input.to_i-1
 end
 
 def turn(board, input, player="X")
