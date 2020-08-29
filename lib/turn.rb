@@ -18,7 +18,7 @@ def input_to_index(input)
   input.to_i-1
 end
 
-def turn(board player="X")
+def turn(board)
   input=input_to_index(gets.strip)
   if valid_move?(board, input)
     move (board, input)
